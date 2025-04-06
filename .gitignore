@@ -1,0 +1,43 @@
+# System
+.DS_Store
+.Trash
+.AppleDouble
+.LSOverride
+
+# Shell
+.zsh_history
+.zsh_sessions
+.zcompdump*
+.lesshst
+.CFUserTextEncoding
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.lock
+
+# Programming junk
+node_modules/
+__pycache__/
+*.pyc
+.conda
+.condarc
+.plastic4
+.nuget
+.dotnet
+.aspnet
+
+# Cache and temp
+.cache/
+.local/
+Library/
+Downloads/
+Desktop/
+
+# Backup
+bak/
+
