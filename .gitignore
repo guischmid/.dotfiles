@@ -1,44 +1,32 @@
-# System
-.DS_Store
-.Trash
-.AppleDouble
-.LSOverride
+# Ignore everything by default
+*
 
-# Shell
-.zsh_history
-.zsh_sessions
-.zcompdump*
-.lesshst
-.CFUserTextEncoding
+# But include these:
+!.gitignore
+!.zshrc
+!.gitconfig
+!.config/
+!.config/nvim/
+!.config/kitty/
+!.config/fish/
+!.config/neofetch/
+!.doom.d/
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-*.bak
-*.tmp
-*.lock
-
-# Programming junk
-node_modules/
-__pycache__/
-*.pyc
-.conda
-.condarc
-.plastic4
-.nuget
-.dotnet
-.aspnet
-
-# Cache and temp
-.cache/
-.local/
-Library/
-Downloads/
-Desktop/
-
-# Backup
+# Ignore backup, large, or external folders
 bak/
-.config/nvim.bak/
+Downloads/
+Pictures/
+Documents/
+scripts/
+Game Project/
+Music/
+Movies/
+Public/
+Desktop/
+Calibre Libraly/
+Applications/
+notes/
+website/
+
+
 
