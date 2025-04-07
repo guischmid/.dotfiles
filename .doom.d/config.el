@@ -29,20 +29,15 @@
   (org-roam-db-autosync-mode)
 
   ;; Custom capture template (inactive until you use it manually)
-  (setq org-roam-capture-templates
-        '(("s" "Structured note (class/chapter/subchapter)" plain
-           "%?"
-           :target (file+head
-                    (lambda ()
-                      (let* ((class (read-string "Class folder: "))
-                             (chapter (read-string "Chapter folder: "))
-                             (title (read-string "Title of the note: "))
-                             (slug (org-roam-node-slugify title)))
-                        (expand-file-name
-                         (format "%s/%s/%s.org" class chapter slug)
-                         org-roam-directory)))
-                    "#+title: ${title}\n#+created: %U\n")
-           :unnarrowed t))))
+  (after! org-roam
+    (setq org-roam-capture-templates
+          '(("i" "Inbox Note" plain
+             "%?"
+             :target (file+head "inbox/${slug}.org"
+                                "#+title: ${title}\n#+created: %U\n")
+             :unnarrowed t)))))
+
+
 
 ;; ----------------------------------------
 ;; LATEX PREVIEW SETTINGS (SVG, CLEAN LOOK)
