@@ -40,4 +40,5 @@ Desktop/
 
 # Backup
 bak/
+.config/nvim.bak/
 
