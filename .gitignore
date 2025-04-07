@@ -4,7 +4,6 @@
 # But include these:
 !.gitignore
 !.zshrc
-!.gitconfig
 !.config/
 !.config/nvim/
 !.config/kitty/
