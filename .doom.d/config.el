@@ -12,6 +12,16 @@
 
 ;; ORG DIRECTORY
 (setq org-directory "~/notes")
+(setq default-directory "~/notes/")
+
+;; ORG AGENDA SETUP
+(after! org
+  (setq org-agenda-files
+        (append
+         ;; Alle agenda.org-Dateien in allen Semestern finden
+         (directory-files-recursively "~/notes/uni/" "^agenda\\.org$")
+         ;; Persönliche Agenda manuell ergänzen
+         '("~/notes/personal/agenda.org"))))
 
 ;; ----------------------------------------
 ;; ORG ROAM CONFIGURATION (READY, NOT IN ACTIVE USE YET)
@@ -38,6 +48,16 @@
              :unnarrowed t)))))
 
 
+;; ----------------------------------------
+;; TREEMACS CONFIGURATION
+;; ----------------------------------------
+
+ (after! treemacs
+  (setq treemacs-width 30
+        treemacs-show-hidden-files t
+        treemacs-follow-after-init t
+        treemacs-indentation 2
+        treemacs-is-never-other-window t))
 
 ;; ----------------------------------------
 ;; LATEX PREVIEW SETTINGS (SVG, CLEAN LOOK)
@@ -45,7 +65,7 @@
 
 (after! org
   (setq org-format-latex-options
-        (plist-put org-format-latex-options :scale 1.7))
+        (plist-put org-format-latex-options :scale 1.5))
   (setq org-preview-latex-default-process 'dvisvgm)
   (setq org-startup-with-latex-preview t))
 
