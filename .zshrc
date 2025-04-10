@@ -23,6 +23,12 @@ alias ll="ls -lAh"
 alias gs="git status"
 alias syncnotes="~/notes/sync-notes.zsh"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias uni="cd ~/notes/uni"
+alias notes="cd ~/notes"
+alias blog="cd ~/website/blog"
+alias peragenda='emacs ~/notes/personal/agenda.org'
+alias unagenda='emacs ~/notes/uni/SS25/agenda.org'
+
 
 
 # Path additions (if needed)
