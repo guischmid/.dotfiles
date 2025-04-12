@@ -7,3 +7,4 @@
 ;; (package! org-modern) ;; deactivated for now
 (package! org-superstar)
 (package! company-math)
+(package! visual-fill-column)
