@@ -70,3 +70,11 @@
 ;; macOS option key fix
 (setq mac-option-modifier 'none)
 (setq mac-right-option-modifier 'meta)
+
+; Org-Wild-Notifier Setup
+(use-package! org-wild-notifier
+  :hook (doom-after-init . org-wild-notifier-mode)
+  :custom
+  (alert-default-style 'osx-notifier) ;; recommended
+  (org-wild-notifier-notification-title "Reminder")
+  (org-wild-notifier-alert-time '(60 10)))
