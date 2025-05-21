@@ -78,3 +78,6 @@
   (alert-default-style 'osx-notifier) ;; recommended
   (org-wild-notifier-notification-title "Reminder")
   (org-wild-notifier-alert-time '(60 10)))
+
+(setq org-startup-with-inline-images t)
+(setq org-image-actual-width nil) ;; display at natural width
