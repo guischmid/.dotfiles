@@ -69,8 +69,7 @@
 
 ;; macOS option key fix
 (setq mac-option-modifier 'none)
-(setq mac-right-option-modifier 'meta)
-
+(setq mac-right-command-modifier 'none)
 ; Org-Wild-Notifier Setup
 (use-package! org-wild-notifier
   :hook (doom-after-init . org-wild-notifier-mode)
