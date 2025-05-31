@@ -47,3 +47,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Created by `pipx` on 2025-05-31 11:04:51
+export PATH="$PATH:/Users/gui/.local/bin"
