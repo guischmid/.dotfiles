@@ -3,6 +3,7 @@
 
 # But include these:
 !.gitignore
+!README.md
 !.zshrc
 !.config/
 !.config/nvim/
